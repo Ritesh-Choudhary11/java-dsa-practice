@@ -3,9 +3,9 @@ public class prodofarray2 {
         int arr[]={1,2,3,4};
         int brr[]=new int[arr.length];
         int n=arr.length;
-        int prod;
+
         for(int i=0;i<n;i++){
-            prod=1;
+           int prod=1;
             for(int j=0;j<n;j++){
                 if(i==j){
                     continue;
