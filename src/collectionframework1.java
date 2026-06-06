@@ -1,8 +1,4 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 
 
 public class collectionframework1 {
@@ -101,6 +97,41 @@ list3.set(0,100);
 
 
 
+        //LINKEDLIST
+
+        LinkedList<Integer> R = new LinkedList();
+        R.add(10);
+        System.out.println(R);
+
+        //adda first and add last add the elements in the first and last position of the linked list
+
+        R.addFirst(1);
+        R.addLast(14);
+        System.out.println(R);
+
+        //peak print the first value of the linkedlist
+        System.out.println(R.peek());
+
+//     VECTOR IS SAME AS ARRAYLIST AND LINKED LIST
+
+
+        //STACK
+        Stack<Integer> ri=new Stack<>();
+        ri.push(12);
+        System.out.println("printing elments of an stack"+ri);
+        ri.push(13);
+        System.out.println("printing elments of an stack"+ri);
+        ri.push(14);
+        System.out.println("printing elments of an stack"+ri);
+        ri.push(15);
+        System.out.println("printing elments of an stack"+ri);
+
+        ri.pop();
+        System.out.println(ri);
+
+
+        System.out.println(ri.peek());
+        System.out.println(ri.search(17));
 
         //OR
         //List<Integer> list= new ArrayList<>();
