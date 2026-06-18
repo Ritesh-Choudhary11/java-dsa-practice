@@ -37,18 +37,18 @@ public class Bitwiseoperator {
 //        }
 
         //power of 4
-//       int  count=0;
-//        int n= sc.nextInt();
-//        while((n&1)==0){
-//            count++;
-//            n=n>>1;
-//        }
-//        if((count % 2)==0){
-//            System.out.println("power of 4");
-//        }
-//        else{
-//         System.out.println("not power of 4");
-//        }
+       int  count=0;
+        int n= sc.nextInt();
+        while((n&1)==0){
+            count++;
+            n=n>>1;
+        }
+        if((count % 2)==0){
+            System.out.println("power of 4");
+        }
+        else{
+         System.out.println("not power of 4");
+        }
 
         int n=5;
      int  ans=0;
