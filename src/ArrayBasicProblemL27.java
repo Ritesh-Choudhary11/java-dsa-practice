@@ -1,14 +1,29 @@
 public class ArrayBasicProblemL27 {
-
-    static void maxelement(int arr[]){
-        int max=0;
-        for(int i=0;i< arr.length;i++){
-            if(max<arr[i]){
-                max=arr[i];
-            }
-        }
-        System.out.println(max);
+    static int[]ReturnSumPosNeg(int arr[]){
+        int sum1=0;
+        int sum2=0;
+      for(int i=0;i<arr.length;i++){
+          if(arr[i]>0){
+            sum1=sum1+arr[i];
+          }
+          else{
+              sum2=sum2+arr[i];
+          }
+      }
+      int ans[]={sum1,sum2};
+      return ans;
     }
+
+
+//    static void maxelement(int arr[]){
+//        int max=0;
+//        for(int i=0;i< arr.length;i++){
+//            if(max<arr[i]){
+//                max=arr[i];
+//            }
+//        }
+//        System.out.println(max);
+//    }
 
     //Linear search3
 //    static boolean Linearsearch(int brr[],int targate){
@@ -35,8 +50,13 @@ public class ArrayBasicProblemL27 {
 //    }
 
     public static void main(String[] args) {
-        int arr[]={9,2,5,7,12};
-        maxelement(arr);
+        int arr[]={-9,2,5,-7,12};
+      int ans[]=ReturnSumPosNeg(arr);
+        System.out.println(ans[0]);
+        System.out.println(ans[1]);
+
+//        int arr[]={9,2,5,7,12};
+//        maxelement(arr);
 
 //        int brr[]={2,5,3,1,7};
 //        System.out.println(Linearsearch(brr,17));
