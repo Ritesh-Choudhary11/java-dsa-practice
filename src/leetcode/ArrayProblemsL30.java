@@ -5,6 +5,11 @@ import java.util.Map;
 
 public class ArrayProblemsL30 {
     public static void main(String[] args) {
+        //Q6
+        
+
+
+
 
         //Q5 -> Q5 and Q3 are same ,jus Q5 is done using hash map
         int arr[]={1,2,2,2,3,3,4};
