@@ -6,26 +6,39 @@ import java.util.Map;
 public class ArrayProblemsL30 {
     public static void main(String[] args) {
         //Q6
-        
+              int arr[]={1,7,3,6,5,6};
+              int n=arr.length;
+              for(int i=0,j=n-1;i<n;){
+                  int sumI=0;
+                  int sumJ=0;
+                  if(sumI==sumJ){
+                      System.out.println(i+1);
+                  }
+                  else{
+                      i++;
+                      sumI=sumI+arr[i];
+                      j--;
+                  }
+              }
 
 
 
 
         //Q5 -> Q5 and Q3 are same ,jus Q5 is done using hash map
-        int arr[]={1,2,2,2,3,3,4};
-        int n= arr.length;
-        Map<Integer,Integer> repeat=new HashMap<>();
-        for(int i=0;i<n;i++){
-            if(repeat.containsKey(arr[i])){
-                repeat.put(arr[i],repeat.get(arr[i])+1);
-            }
-            else{
-                repeat.put(arr[i],1);
-
-            }
-
-       }
-        System.out.println(repeat.size());
+//        int arr[]={1,2,2,2,3,3,4};
+//        int n= arr.length;
+//        Map<Integer,Integer> repeat=new HashMap<>();
+//        for(int i=0;i<n;i++){
+//            if(repeat.containsKey(arr[i])){
+//                repeat.put(arr[i],repeat.get(arr[i])+1);
+//            }
+//            else{
+//                repeat.put(arr[i],1);
+//
+//            }
+//
+//       }
+//        System.out.println(repeat.size());
 
 
 
@@ -56,27 +69,28 @@ public class ArrayProblemsL30 {
 
 
         //Q3
-//        int nums[]={1,2,2,2,3,3,4};
-//        int n= nums.length;
+//        int arr[]={1,2,2,2,3,3,4};
+//        int n= arr.length;
 //        int i=0;
 //        int j=1;
 //        while(j<n){
-//            if(nums[i]==nums[j]){
+//            if(arr[i]==arr[j]){
 //                j++;
 //            }
 //            else{
 //                i++;
-//                nums[i]=nums[j];
+//                arr[i]=arr[j];
 //                j++;
 //            }
 //        }
 //        System.out.println(i+1);
 
-
        // Q2
 //        int arr[]={1,5,7,2,9,8};
 //        int targate=12;
 //        int n=arr.length;
+//           for(int j=i+1;j<n;j++){
+//               if(arr[i]+arr[j]==targate){
 //        for (int i=0;i<n;i++){
 //            for(int j=i+1;j<n;j++){
 //                for(int k=j+1;k<n;k++){
@@ -94,8 +108,6 @@ public class ArrayProblemsL30 {
 //        int n=arr.length;
 //        int targate=9;
 //        for(int i=0;i<n;i++){
-//           for(int j=i+1;j<n;j++){
-//               if(arr[i]+arr[j]==targate){
 //                   System.out.println(i);
 //                   System.out.println(j);
 //               }
