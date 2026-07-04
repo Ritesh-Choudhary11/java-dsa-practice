@@ -5,21 +5,26 @@ import java.util.Map;
 
 public class ArrayProblemsL30 {
     public static void main(String[] args) {
-        //Q6
+        //Q6 Finf pivot index
               int arr[]={1,7,3,6,5,6};
               int n=arr.length;
-              for(int i=0,j=n-1;i<n;){
-                  int sumI=0;
-                  int sumJ=0;
-                  if(sumI==sumJ){
-                      System.out.println(i+1);
-                  }
-                  else{
-                      i++;
-                      sumI=sumI+arr[i];
-                      j--;
-                  }
-              }
+             for(int i=0;i<n;i++){
+                int LeftSum=0;
+                 int RightSum=0;
+
+                 for(int j=0;j<i;j++){
+                     LeftSum=LeftSum+arr[j];
+                 }
+                 for(int k=i+1;k<n;k++){
+                     RightSum=RightSum+arr[k];
+                 }
+                 if(LeftSum==RightSum){
+                     System.out.println("pivot index = "+i);
+                     break;
+                 }
+
+             }
+
 
 
 
