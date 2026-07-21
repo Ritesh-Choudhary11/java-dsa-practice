@@ -1,56 +1,56 @@
+import java.util.List;
+import java.util.ArrayList;
 public class Lecture33TwodArrayProblems {
     public static void main(String[] args) {
+        // Q4.transpose of a 2d array
+//        int arr[][] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+//
+//        //for original array
+//        int n = arr.length;
+//        int m = arr[0].length;
+//
+//        //for new array
+//        int newRow = arr[0].length;
+//        int newCol = arr.length;
+//        int newarr[][] = new int[newRow][newCol];
+//
+//        for (int row = 0; row < n; row++) {
+//            for (int col = 0; col < m; col++) {
+//                newarr[col][row] = arr[row][col];
+//            }
+//
+//        }
+//        for (int row = 0; row < newRow; row++) {
+//            for (int col = 0; col < newCol; col++) {
+//                System.out.print(newarr[row][col] + " ");
+//            }
+//            System.out.println();   // Move to the next line after one row
+//        }
 
-        int arr[][]={{1,2,3},{4,5,6},{7,8,9}};
 
-        //for original array
+//     Q3.print the 2d array in wave form
+
+      List<Integer> result=new ArrayList<>();
+      int arr[][]={{1,2,3},{4,5,6},{7,8,9}};
       int n=arr.length;
       int m=arr[0].length;
-
-      //for new array
-        int newRow=arr[0].length;
-        int newCol = arr.length;
-        int newarr[][]=new int[newRow][newCol];
-
-      for(int row=0;row<n;row++){
-          for(int col = 0; col<m; col++){
-              newarr[col][row]=arr[row][col];
-          }
-
-      }
-        for(int row = 0; row < newRow; row++) {
-            for(int col = 0; col < newCol; col++) {
-                System.out.print(newarr[row][col] + " ");
+      for(int col=0;col<m;col++) {
+        if((col&1)==1){
+            for(int row=n-1;row>=0;row--){
+                result.add(arr[row][col]);
             }
-            System.out.println();   // Move to the next line after one row
+        }
+        else{
+            for(int row=0;row<n;row++){
+                result.add(arr[row][col]);
+            }
         }
 
+      }
+        System.out.println(result);
 
 
-
-
-
-//      List<Integer> result=new ArrayList<>();
-//      int arr[][]={{1,2,3},{4,5,6},{7,8,9}};
-//      int n=arr.length;
-//      int m=arr[0].length;
-//      for(int col=0;col<m;col++) {
-//        if((col&1)==1){
-//            for(int row=n-1;row>=0;row--){
-//                result.add(arr[row][col]);
-//            }
-//        }
-//        else{
-//            for(int row=0;row<n;row++){
-//                result.add(arr[row][col]);
-//            }
-//        }
-//
-//      }
-//        System.out.println(result);
-
-
-
+//      Q2.sum of all the column in a 2d array
 
 //      List<Integer> result=new ArrayList<>();
 //      int arr[][]={{1,2,3},{4,5,6},{7,8,9}};
@@ -66,8 +66,7 @@ public class Lecture33TwodArrayProblems {
 //        System.out.println(result);
 
 
-
-
+//    Q1.sum of the two d array
 
 //      for(int row=0;row<n;row++) {
 //          int sum=0;
@@ -77,7 +76,6 @@ public class Lecture33TwodArrayProblems {
 //          result.add(sum);
 //      }
 //
-//        System.out.println(result);
-
+//        System.out.println(result    }
     }
 }
