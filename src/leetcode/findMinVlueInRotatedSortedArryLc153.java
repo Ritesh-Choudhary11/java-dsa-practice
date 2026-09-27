@@ -5,7 +5,7 @@ public class findMinVlueInRotatedSortedArryLc153 {
         int nums[] = {4, 5, 6, 7, 0 ,1, 2};
         int n = nums.length;
         int s = 0;
-        int e = n - 1;
+        int e = n-1;
         int ans = 0;
         while (s < e) {
             int mid = s + (e - s) / 2;
